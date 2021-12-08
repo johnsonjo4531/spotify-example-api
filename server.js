@@ -5,7 +5,6 @@ const sql = require('mssql');
 const session = require("express-session");
 const bodyParser = require("body-parser");
 const SpotifyStrategy = require('passport-spotify').Strategy;
-const { sample } = require("lodash");
 const got = require('got');
 
 const app = express();

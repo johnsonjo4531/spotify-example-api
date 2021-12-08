@@ -34,6 +34,6 @@ export function getPathParams(pattern) {
         const finalParam = param.replace(":");
         return { [finalParam]: finalParam };
     }).map(param => ({
-        window.location.pathname.replace();
+        [param]: window.location.pathname.replace()
     }));
 }

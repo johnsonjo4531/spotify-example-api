@@ -1,6 +1,6 @@
 import { React, ReactDOM } from 'https://unpkg.com/es-react@16.8.60/index.js';
 import htm from 'https://unpkg.com/htm@2.2.1/dist/htm.mjs';
-import { useQuery } from './utils';
+import { useQuery } from './utils.js';
 
 const { useEffect, useState, useRef } = React;
 
