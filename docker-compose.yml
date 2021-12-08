@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+
+  db:
+    image: mcr.microsoft.com/mssql/server
+    ports:
+      - "1433:1433"
+    env_file:
+      - .env
+    healthcheck:
+      test: sqlcmd -S db1.internal.prod.example.com -U SA -P $SA_PASSWORD -Q 'select distinct 1 from AdventureWorksDW2017.dbo.DimDate'
